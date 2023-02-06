@@ -1,0 +1,15 @@
+[submodule "docs/CM10195"]
+	path = docs/CM10195
+	url = https://github.com/Wilhelm-III/CM10195
+[submodule "docs/CM10228"]
+	path = docs/CM10228
+	url = https://github.com/Wilhelm-III/CM10228
+[submodule "docs/CM10310"]
+	path = docs/CM10310
+	url = https://github.com/Wilhelm-III/CM10310
+[submodule "docs/CM10312"]
+	path = docs/CM10312
+	url = https://github.com/Wilhelm-III/CM10312
+[submodule "docs/CM10313"]
+	path = docs/CM10313
+	url = https://github.com/Wilhelm-III/CM10313
