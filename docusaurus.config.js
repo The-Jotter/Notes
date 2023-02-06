@@ -4,6 +4,9 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
@@ -40,12 +43,16 @@ const config = {
         docs: {
           // id: "meta",
           path: "docs/meta",
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
           sidebarPath: require.resolve('./sidebars/meta.js'),
           routeBasePath: "meta",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/The-Jotter/Notes/tree/main',
+
+          
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -60,9 +67,11 @@ const config = {
       {
         id: 'CM10195',
         path: 'docs/CM10195',
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
         routeBasePath: 'CM10195',
         sidebarPath: require.resolve('./sidebars/CM10195.js'),
-        editUrl: "https://github.com/The-Jotter/CM10195/tree/main"
+        editUrl: "https://github.com/The-Jotter/CM10195/tree/main",
         // ... other options
       },
     ],
@@ -72,6 +81,8 @@ const config = {
         id: 'CM10312',
         path: 'docs/CM10312',
         routeBasePath: 'CM10312',
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
         sidebarPath: require.resolve('./sidebars/CM10312.js'),
         editUrl: "https://github.com/The-Jotter/CM10312/tree/main"
 
@@ -83,6 +94,8 @@ const config = {
       {
         id: 'CM10228',
         path: 'docs/CM10228',
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
         routeBasePath: 'CM10228',
         sidebarPath: require.resolve('./sidebars/CM10228.js'),
         editUrl: "https://github.com/The-Jotter/CM10228/tree/main"
@@ -97,7 +110,9 @@ const config = {
         path: 'docs/CM10310',
         routeBasePath: 'CM10310',
         sidebarPath: require.resolve('./sidebars/CM10310.js'),
-        editUrl: "https://github.com/The-Jotter/CM10310/tree/main"
+        editUrl: "https://github.com/The-Jotter/CM10310/tree/main",
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
 
         // ... other options
       },
@@ -108,6 +123,8 @@ const config = {
         id: 'CM10313',
         path: 'docs/CM10313',
         routeBasePath: 'CM10313',
+        remarkPlugins: [math],
+        rehypePlugins: [katex],
         sidebarPath: require.resolve('./sidebars/CM10313.js'),
         editUrl: "https://github.com/The-Jotter/CM10313/tree/main"
         // ... other options
@@ -199,6 +216,16 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+    stylesheets: [
+      {
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+        type: 'text/css',
+        integrity:
+          'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+        crossorigin: 'anonymous',
+      },
+    ],
 };
 
 module.exports = config;
