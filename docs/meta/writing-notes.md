@@ -15,7 +15,7 @@ Use the [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/).
 
 ## Quick Reference
 ### Ordering Items
-At the top of your markdown file (in the [front matter]()), use the `sidebar_position` key to tell Docusaurus to position a page at a particular index.
+At the top of your markdown file (in the [front matter](https://jekyllrb.com/docs/front-matter/)), use the `sidebar_position` key to tell Docusaurus to position a page at a particular index.
 
 ```mdx title="my-example.mdx"
 ---
