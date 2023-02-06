@@ -5,6 +5,8 @@ sidebar_position: 2
 
 # Writing notes with Jotter
 
+Useful links and a reference to using markdown in general.
+
 ## Docusaurus
 Jotter is based off ~~Facebook~~ Meta's [Docusaurus](https://docusaurus.io/) documentation framework. 
 
@@ -24,4 +26,19 @@ sidebar_position: 2
 ---
 
 <!-- page contents here -->
+```
+
+### Embedded LaTeX Equations
+Jotter uses the KaTeX engine which allows for the code to be rendered into HTML elements.
+
+To embed LaTeX into a page, suround the LaTeX with `$`'s.
+
+#### Example:
+
+$\sin x = x - \frac{x^3}{3!}+\frac{x^5}{5!} + \dots$
+
+```mdx title="Taylor series for sine of x"
+#### Example:
+
+$\sin x = x - \frac{x^3}{3!}+\frac{x^5}{5!} + \dots$
 ```

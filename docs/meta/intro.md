@@ -9,7 +9,7 @@ sidebar_position: 1
 ## Requirements
 So, in order to get this clunky system to work, you need:
 * [`git`](https://git-scm.com/)
-* [`vscode`](https://code.visualstudio.com/) or your favourite IDE, though it doesn't have first-class support.
+* [`vscode`](https://code.visualstudio.com/) or your favourite IDE, though it won't have first-class support.
 
 ## Set-up
 ### 1. Get access to the GitHub organisation
@@ -25,7 +25,7 @@ in order to edit them, you'll need to `git clone` them.
 
 <br />
 
-### Example
+#### Example
 
 ```sh title="Setting up notes for CM10195" 
 git clone https://github.com/The-Jotter/CM10195
